@@ -20,35 +20,11 @@ namespace SimpleFactory
 
                 string strNumberB = Console.ReadLine();
 
-                string Result;
+                double result = Operator.GetResult(Convert.ToDouble(strNumberA), Convert.ToDouble(strNumberB), strOperator);
 
-                switch (strOperator)
-                {
-                    case "+":
-                        Result = Convert.ToString(Convert.ToDouble(strNumberA) + Convert.ToDouble(strNumberB));
-                        break;
-                    case "-":
-                        Result = Convert.ToString(Convert.ToDouble(strNumberA) - Convert.ToDouble(strNumberB));
-                        break;
-                    case "*":
-                        Result = Convert.ToString(Convert.ToDouble(strNumberA) * Convert.ToDouble(strNumberB));
-                        break;
-                    case "/":
-                        if (Math.Abs(Convert.ToDouble(strNumberB) - 0.0) < 0.0001)
-                        {
-                            throw new Exception("Cannot be zero!");
-                        }
-                        else
-                        {
-                            Result = Convert.ToString(Convert.ToDouble(strNumberA) / Convert.ToDouble(strNumberB));
-                        }
-                        break;
-                    default:
-                        Result = "None";
-                        break;
-                }
+                string strResult = Convert.ToString(result);
 
-                Console.WriteLine("The result is: " + Result);
+                Console.WriteLine("The result is: " + strResult);
             }
             catch (Exception ex)
             {
