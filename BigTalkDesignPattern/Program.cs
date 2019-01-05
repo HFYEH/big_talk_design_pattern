@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BigTalkDesignPattern
+namespace SimpleFactory
 {
     class MainClass
     {

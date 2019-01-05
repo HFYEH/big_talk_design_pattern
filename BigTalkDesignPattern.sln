@@ -1,7 +1,9 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigTalkDesignPattern", "BigTalkDesignPattern\BigTalkDesignPattern.csproj", "{88CDE8F4-7DDF-4EDC-AEE7-2A0F9463854D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFactory", "BigTalkDesignPattern\SimpleFactory.csproj", "{88CDE8F4-7DDF-4EDC-AEE7-2A0F9463854D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter1", "Chapter1", "{F6354938-9DD8-47A8-A8AD-E5654C4E7FBF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,5 +15,8 @@ Global
 		{88CDE8F4-7DDF-4EDC-AEE7-2A0F9463854D}.Debug|x86.Build.0 = Debug|x86
 		{88CDE8F4-7DDF-4EDC-AEE7-2A0F9463854D}.Release|x86.ActiveCfg = Release|x86
 		{88CDE8F4-7DDF-4EDC-AEE7-2A0F9463854D}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{88CDE8F4-7DDF-4EDC-AEE7-2A0F9463854D} = {F6354938-9DD8-47A8-A8AD-E5654C4E7FBF}
 	EndGlobalSection
 EndGlobal
