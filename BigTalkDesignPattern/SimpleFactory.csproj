@@ -35,6 +35,11 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Operator.cs" />
+    <Compile Include="OperatorAdd.cs" />
+    <Compile Include="OperatorSub.cs" />
+    <Compile Include="OperatorMul.cs" />
+    <Compile Include="OperatorDiv.cs" />
+    <Compile Include="OperatorFactory.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

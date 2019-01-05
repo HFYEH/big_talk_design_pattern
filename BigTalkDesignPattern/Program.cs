@@ -20,8 +20,9 @@ namespace SimpleFactory
 
                 string strNumberB = Console.ReadLine();
 
-                double result = Operator.GetResult(Convert.ToDouble(strNumberA), Convert.ToDouble(strNumberB), strOperator);
+                Operator op = OperatorFactory.CreateOperator(strOperator);
 
+                double result = op.GetResult(Convert.ToDouble(strNumberA), Convert.ToDouble(strNumberB));
                 string strResult = Convert.ToString(result);
 
                 Console.WriteLine("The result is: " + strResult);
